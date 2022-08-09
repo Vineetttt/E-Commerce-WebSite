@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <title>E-Commerce WebSite</title>
+</head>
+<body>
+    <!-- header section starts here  -->
+    <section id="header">
+        <!-- creating the logo -->
+        <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+
+        <!-- creating the nav links  -->
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                <!-- Cart icon  -->
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <!--For mobile view. clicking dropdowns navbar elements-->
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- header section ends here  -->
+
+    <!-- hero section starts here  -->
+    <section id="page-header" class="about-header">
+        <h2>YOUR CART </h2>`    
+    </section>
+    <!-- hero section ends here  -->
+
+    <!--Cart Section Starts Here-->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGES</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$112.5</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$112.5</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$112.5</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirt</td>
+                    <td>$115</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$112.5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--Cart Section Endss Here-->
+
+    <!--Cart Total and Coupon Section Starts here-->
+    <section id="cart-footer" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter the Coupon Code here">
+                <button class="normal">Apply Coupon</button>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>SubTotal &nbsp;&nbsp;&nbsp;</td>
+                        <td>$xx </td>
+                    </tr>
+                    <tr>
+                        <td>Shipping </td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total </strong></td>
+                        <td><strong>$xx</strong>
+                        </td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+    <!--Cart Total and Coupon Section Ends here-->
+
+      <!--Footer section starts here-->
+      <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png" alt="" class="logo"> 
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 724 ABC road,Street 34, ABC<br><br>
+            <strong>Telephone:</strong> +01-123-dummy-123<br><br>
+            <strong>Visiting Hours:</strong> 10:00 to 19:00 Mon-Sat</p>
+        </div>
+        <div class="social">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="">Shipping Partners</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="contact.html">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Google Play Store /App Store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Options</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <!-- <div class="copyright">
+            <p>© 2022,Tech2 etc -----</p>
+        </div> -->
+    </footer>
+    <!--Footer section ends here-->
+
+    <script src="script.js"></script>
+</body>
+</html>

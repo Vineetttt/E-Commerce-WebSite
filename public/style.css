@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+/***************************************** Custom styling for basic tags *****************************************/
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+button.normal{
+    font-size: 16px;
+    font-weight: 800;
+    color: #222;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+    border: none;
+    transition: none;
+}
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: 1px solid #fff;
+    transition: none;
+}
+
+
+.section-p1{
+    padding:40px 80px ;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+/* header section styling starts here  */
+
+#header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6); 
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* removing the bullet points from the defaut list tag */
+#navbar li{
+    list-style: none;
+    padding: 0 20px;  
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease; /*for the hover transition to be smooth*/
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;   
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+/* #mobile a{
+    text-decoration: none;
+} */
+
+/* home page styling starts here */
+#hero{
+    background-image: url(img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    /* to align the entire image in center */
+    background-position: top 25% right 0%;
+    background-size: cover;
+    padding: 0 80px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-image: url(img/button.png);
+    background-color: transparent;  /* to hide the background color*/
+    color: #088178;
+    border: 0;
+    padding: 20px 80px 20px 80px;
+    background-repeat: no-repeat;
+    cursor: pointer; /* will turn our cursor into a pointer on hovering over the element*/
+    font-size: 15px;
+    font-weight: bold;
+}
+/* home page styling ends here */
+
+/*features styling starts here*/
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom:10px ;
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+/* changing the background color of each h6 using the nth child selector */
+#feature .fe-box:nth-child(2) h6{   
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{   
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6{   
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6{   
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{   
+    background-color: #fff2e5;
+}
+/*features stylings ends here*/
+
+/*featured products styling starts here*/
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+}
+#product1 img{
+    width: 100%;
+    border-radius: 25px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 8px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    color: rgb(234,181,25);
+    font-size: 12px;
+}
+#product1 .pro .des h4{
+    padding-top: 8px;
+    color: #088178;
+    font-size: 17px;
+    font-weight: 800;
+}
+#product1 .pro .fa-shopping-cart{
+    width: 40px;
+    height: 40px;
+    color: #088178;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    line-height: 40px;
+    font-weight: 500;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/*featured products styling ends here*/
+
+/*banner section styling starts here */
+#banner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/banner/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+#banner h4{
+    color: #fff;
+    font-size: 15px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+#banner h2 span{
+    color: red;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+/*banner section styling starts here */
+
+/*new arrivals styling same as featured products*/
+
+/*offer banner section starts here*/
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+}
+#sm-banner .banner-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    background-image: url(img/banner/b17.jpg);
+    min-width:580px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+#sm-banner .new-img{
+    background-image: url(img/banner/b10.jpg);
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+/*offer banner section ends here*/
+
+/*textbar banner styling starts here */
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(img/banner/b7.jpg);
+    width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+#banner3 .img-2{
+    background-image: url(img/banner/b4.jpg);
+}
+#banner3 .img-3{
+    background-image: url(img/banner/b18.jpg);
+}
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner h3{
+    color: #222;
+    font-weight: 600;
+    font-size: 15px;
+}
+/*textbar banner styling ends here */
+
+/*Newsletter styling starts here*/
+#newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+#newsletter p{
+    color: #818ea0;
+    font-size: 16px;
+    font-weight: 500;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+}
+#newsletter .form{
+    display: flex;
+    height: 3.125rem;
+}
+/*Newsletter styling endss here*/
+
+/*Footer section styling starts here*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 12px;
+    padding:  0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .social{
+    margin-top: 20px;
+}
+footer .social i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 10px;
+}
+footer .social i:hover,
+footer a:hover{
+    color: #088178;
+}
+/*Footer section styling ends here*/
+
+
+
+/*Shop Page Styling Starts here*/
+#page-header{
+    background-image: url(img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 700;
+}
+/*Shop Page Styling Ends here*/
+
+/*Single Products Page Starts Here*/
+#proddetail{
+    display: flex;
+    margin-top: 20px;
+}
+#proddetail .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    justify-content: space-between;
+    display: flex;
+}
+.small-img-col{
+    cursor: pointer;
+}
+#proddetail .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#proddetail .single-pro-details h4{
+    font-size: 30px;
+    padding: 40px 0 20px 0;
+}
+#proddetail .single-pro-details h2{
+    font-size: 26px ;
+}
+#proddetail .single-pro-details select{
+    display: block;
+    padding: 5x 10px;
+    margin-bottom: 10px;
+}
+#proddetail .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+#proddetail .single-pro-details span{
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 20px;
+}
+/*Single Products Page Ends Here*/
+
+/*Blog Page Styling Starts here*/
+#page-header.blog-header{
+    background-image: url(img/banner/b19.jpg);
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-content: center;
+    padding-bottom: 90px;
+    width: 100%;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;  
+}
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #222;
+    border: 1px solid transparent;
+}
+#blog .blog-details h4{
+    display: flex;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#blog .blog-details p{
+    font-size: 18px;
+    line-height: 25px;
+}
+/*Blog Page Styling Ends here*/
+
+/*About Page Styling Starts Here*/
+#page-header.about-header{
+    background-image: url(img/about/banner.png);
+}
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 40px;
+}
+#about-app{
+    text-align: center;
+}
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/*About Page Styling Ends Here*/
+
+/*Contact Page styling starts here*/
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .deails span{
+    font-size: 15px;
+}
+#contact-details .details h2{
+    font-size: 20px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+   display: flex;
+   padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px ;
+}
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details input,
+#form-details textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1ps solid #e1e1e1;
+}
+#form-details form button{
+    background-color: #088178;
+    color: white;
+}
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+}
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#form-details .people div span{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+}
+/*Contact Page styling ends here*/
+
+/*Cart Page Styling Starts here*/
+#cart{
+    overflow-x: auto;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#cart table td{
+    font-weight: 700;
+    padding: 18px;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+    font-weight: 100;
+    font-size: 15px;
+}
+#coupon{
+    padding-left: 150px;
+}
+#coupon h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    border: 1px solid #e2e9e1;
+}
+#coupon button{
+    background-color: #088178;
+    border-radius: 5px;
+    color: #fff;
+}
+#subtotal{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+}
+#subtotal button{
+background-color: #088178;
+border-radius: 5px;
+color: #fff;
+}
+
+
+/*Cart Page Styling Ends here*/
+
+/*Responsiveness*/
+/*Responsive BreakPoint 1 for Tablet devices*/
+@media(max-width: 768px){
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0; 
+        right: -300px;  /*-300 to hide the navbar*/
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0,1);
+        padding: 80px 0 0 10px  ;
+        transition: 0.1s;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 20px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+    #mobile a{
+        text-decoration: none;
+        color: inherit;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px; 
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+       
+        margin: 15px ;
+    }
+    #banner {
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        display: none;
+    }
+    #banner3 {
+        display: none;
+    }
+    #newsletter.form{
+        width: 70%;
+    }
+    #blog{
+        padding: 100px 20px 0px 20px ;
+    }
+    #blog.blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog.blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog.blog-details{
+        width: 100%;
+    }
+    #blog.blog-details h4{
+        font-size: 20px;
+    }
+    #blog.blog-details p{
+        font-size: 15px;
+    }
+    #form-details {
+        padding: 50px;
+    }
+    #form-details form{
+        width: 50%;
+    }
+}
+/*Resonsive BreakPoint 2 for Mobile Devices*/
+@media(max-width: 477px){
+    #header {
+        padding: 10px 30px;
+    }
+    .section-p1 {
+        padding: 20px;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #product1 .pro {
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    #newsletter.form{
+        width: 100%;
+    }
+    /* Single Product Description Page Starts Here*/
+    #proddetail {
+        display: flex;
+        flex-direction: column;
+    }
+    #proddetail .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #proddetail .single-pro-details{
+        width: 100%;
+    }
+    /* Single Product Description Page Ends Here*/
+
+    /*Blog Page Styling Starts here*/
+    #blog{
+        padding: 100px 20px 0px 20px ;
+    }
+    #blog.blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog.blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog.blog-details{
+        width: 100%;
+    }
+    #blog.blog-details h4{
+        font-size: 20px;
+    }
+    #blog.blog-details p{
+        font-size: 15px;
+    }
+
+    /*Blog Page Styling Ends here*/
+    /*About Section Styling Starts Here*/
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin: 0 20px 0 0;
+    }
+    #about-head video{
+        width: 100%;  
+    }
+    /*About Section Styling Ends Here*/
+
+    #contact-details{
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map{
+        width: 100%;
+    }
+    #form-details{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #cart-add{
+        flex-direction: column;
+    }
+    #coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
+    }
+}
