@@ -6,5 +6,5 @@ The WebSite is compatible with all the viewports and is completely Responsive.
 project once I learn more about Web Development.
 <br>The project is under free hosting using Google FireBase, so it may require patience :)
 <br>
-[Click Here](https://e-commerce-website-vineet.web.app/) to view the WebSite.
+[Click Here](https://e-commerce-website-vineet.web.app/) to view the WebSite
 
