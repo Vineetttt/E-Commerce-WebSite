@@ -1,4 +1,4 @@
-#About
+<h3>About</h3>
 
 A multi page [E-Commerce WebSite](https://e-commerce-website-vineet.web.app/) made using HTML CSS and Vanilla JavaScript.
 The Project demonstartes some of the basic yet important features of an E-Commerce Website which is only the tip of an iceberg.
